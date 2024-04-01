@@ -29,5 +29,6 @@ public class FindEvenOdd {
 		System.out.println("even: "+even);
 		System.out.println("odd: "+odd);
 		
+		
 	}
 }

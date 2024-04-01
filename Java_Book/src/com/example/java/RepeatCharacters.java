@@ -5,8 +5,8 @@ public class RepeatCharacters {
 	
 	public static void main(String[] args) {
 		
-		String input1 = "a2";
-		String input2 = "a2b1c3";
+		String input1 = "a2b";
+	//	String input1 = "a2b1c3";
 		
 		
 	//	System.out.println(input1.charAt(0)-'0');
@@ -25,11 +25,12 @@ public class RepeatCharacters {
 			i++;
 			
 			if(i<input.length() && Character.isDigit(input.charAt(i))) {
-				
+				System.out.println("if");
 				int count = 0;
 				
 				while(i<input.length() && Character.isDigit(input.charAt(i))) {
-					count = count * 10 + (input.charAt(i) - '0');
+					count =  (input.charAt(i) - '0');
+					System.out.println(input.charAt(i) );
 					i++;
 					
 					System.out.println(count);
@@ -40,6 +41,7 @@ public class RepeatCharacters {
 				}
 				
 			}else {
+				System.out.println("else");
 				result.append(ch);
 			}
 			

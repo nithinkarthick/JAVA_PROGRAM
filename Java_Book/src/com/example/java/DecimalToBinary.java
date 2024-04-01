@@ -11,6 +11,7 @@ public class DecimalToBinary {
 	
 	public static void convert(int n) {
 		
+		try {
 		int[] binary = new int[32];
 		int id=0;
 		while(n>0) {
@@ -21,6 +22,11 @@ public class DecimalToBinary {
 		for(int i=id-1 ; i>=0 ; i--) {
 			System.out.print(binary[i]+ "");
 		}
+	
+	}catch(Exception e) {
+		e.printStackTrace();
 	}
+	
+}
 	
 }

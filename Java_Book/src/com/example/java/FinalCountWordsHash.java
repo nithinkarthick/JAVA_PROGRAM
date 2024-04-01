@@ -19,7 +19,8 @@ public class FinalCountWordsHash {
 	for( int i =0 ; i< split.length ; i++) {
 		if(map.containsKey(split[i])) {
 			int count = map.get(split[i]);
-			map.put(split[i], count+1);
+	//		map.put(split[i], count+1);
+			map.put(split[i], map.getOrDefault(split[i], 0)+1);
 		}else {
 			map.put(split[i], 1);
 		}
