@@ -30,7 +30,7 @@ public class PrintDuplicateChar {
 			}
 		}
 		
-		
+			
 		for(Map.Entry<Character, Integer> entry : map.entrySet()) {
 			
 			if(entry.getValue()>1) {
